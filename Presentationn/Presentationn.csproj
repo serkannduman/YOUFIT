@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{49A54D8A-D6D4-4342-8C4B-62225C1E9F7E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Presentationn</RootNamespace>
+    <AssemblyName>Presentationn</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="00GirişSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="00GirişSayfa.Designer.cs">
+      <DependentUpon>00GirişSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01UyeOlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01UyeOlForm.Designer.cs">
+      <DependentUpon>01UyeOlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="02GirişYapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02GirişYapForm.Designer.cs">
+      <DependentUpon>02GirişYapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03ÜyeliksizDevamEt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03ÜyeliksizDevamEt.Designer.cs">
+      <DependentUpon>03ÜyeliksizDevamEt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="04ÜyeBilgiKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="04ÜyeBilgiKayıt.Designer.cs">
+      <DependentUpon>04ÜyeBilgiKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="06AnaPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="06AnaPanel.Designer.cs">
+      <DependentUpon>06AnaPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="07KaloriTakip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="07KaloriTakip.Designer.cs">
+      <DependentUpon>07KaloriTakip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="08KaçKalori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="08KaçKalori.Designer.cs">
+      <DependentUpon>08KaçKalori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="09SuTakip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="09SuTakip.Designer.cs">
+      <DependentUpon>09SuTakip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10Raporlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10Raporlar.Designer.cs">
+      <DependentUpon>10Raporlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="11UzmanaSor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="11UzmanaSor.Designer.cs">
+      <DependentUpon>11UzmanaSor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="12AylıkKıyasRaporu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="12AylıkKıyasRaporu.Designer.cs">
+      <DependentUpon>12AylıkKıyasRaporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="13HaftalıkKıyasRaporu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="13HaftalıkKıyasRaporu.Designer.cs">
+      <DependentUpon>13HaftalıkKıyasRaporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="14HaftalıkYemekÇeşitineGöreRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="14HaftalıkYemekÇeşitineGöreRapor.Designer.cs">
+      <DependentUpon>14HaftalıkYemekÇeşitineGöreRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="15AylıkYemekÇeşitineGöreRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="15AylıkYemekÇeşitineGöreRapor.Designer.cs">
+      <DependentUpon>15AylıkYemekÇeşitineGöreRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="16KiloGüncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="16KiloGüncelle.Designer.cs">
+      <DependentUpon>16KiloGüncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="00GirişSayfa.resx">
+      <DependentUpon>00GirişSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01UyeOlForm.resx">
+      <DependentUpon>01UyeOlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02GirişYapForm.resx">
+      <DependentUpon>02GirişYapForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03ÜyeliksizDevamEt.resx">
+      <DependentUpon>03ÜyeliksizDevamEt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="04ÜyeBilgiKayıt.resx">
+      <DependentUpon>04ÜyeBilgiKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="06AnaPanel.resx">
+      <DependentUpon>06AnaPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="07KaloriTakip.resx">
+      <DependentUpon>07KaloriTakip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="08KaçKalori.resx">
+      <DependentUpon>08KaçKalori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="09SuTakip.resx">
+      <DependentUpon>09SuTakip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10Raporlar.resx">
+      <DependentUpon>10Raporlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="11UzmanaSor.resx">
+      <DependentUpon>11UzmanaSor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="12AylıkKıyasRaporu.resx">
+      <DependentUpon>12AylıkKıyasRaporu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="13HaftalıkKıyasRaporu.resx">
+      <DependentUpon>13HaftalıkKıyasRaporu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="14HaftalıkYemekÇeşitineGöreRapor.resx">
+      <DependentUpon>14HaftalıkYemekÇeşitineGöreRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="15AylıkYemekÇeşitineGöreRapor.resx">
+      <DependentUpon>15AylıkYemekÇeşitineGöreRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="16KiloGüncelle.resx">
+      <DependentUpon>16KiloGüncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccessLayout\DataAccessLayout.csproj">
+      <Project>{74701be8-5508-426c-971e-90ea6dd90a2f}</Project>
+      <Name>DataAccessLayout</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{39fb4cee-d694-494a-bb30-07bd0b910bbb}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
